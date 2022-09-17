@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" style="-fx-max-height: 300; -fx-min-height: 300; -fx-max-width: 400; -fx-min-width: 400;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatclient.RegisterController">
+   <children>
+      <ImageView cache="true" fitHeight="120.0" fitWidth="400.0" pickOnBounds="true">
+         <image>
+            <Image url="@loginPic.png" />
+         </image>
+         <FlowPane.margin>
+            <Insets bottom="20.0" />
+         </FlowPane.margin>
+      </ImageView>
+      <HBox prefHeight="30.0" prefWidth="400.0" style="-fx-alignment: center;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="昵称">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></Label>
+            <TextField fx:id="inputNickName" />
+         </children>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="400.0" style="-fx-alignment: center;">
+         <children>
+            <Label alignment="CENTER" text="密码">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></Label>
+            <PasswordField fx:id="inputPwd" />
+         </children>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="400.0" style="-fx-alignment: center;">
+         <children>
+            <Button fx:id="registerButton" mnemonicParsing="false" onMouseClicked="#clickRegisterButton" text="注册">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <FlowPane.margin>
+            <Insets top="20.0" />
+         </FlowPane.margin>
+      </HBox>
+   </children>
+</FlowPane>
